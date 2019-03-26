@@ -1,0 +1,40 @@
+<br><br><br><br><br>
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-two-fifths">
+        <h3 class="title is-3" >¡Entra ahora mismo!</h3>
+
+        <div class="field">
+          <label class="label">Nombre de usuario</label>
+          <div class="control has-icons-left">
+            <input (change)="isAValidUserName()" [(ngModel)]="candidateUser.userName" class="input" type="text" placeholder="Ej. Mariano24" />
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Contraseña</label>
+          <div class="control has-icons-left">
+            <input (change)="isAValidPassword() " [(ngModel)]="candidateUser.password" class="input" type="password"/>
+            <span class="icon is-small is-left">
+              <i class="fas fa-lock"></i>
+            </span>
+          </div>
+        </div>
+        <p *ngIf="isValidUserName == false || isValidPassword == false " class="help is-danger">This email is invalid</p>
+
+        <br>
+
+        <div>
+          <a (click)="login()" class="button is-medium is-danger is-fullwidth " style="background-color: #f25c65">Iniciar Sesion</a>             
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+<br><br><br><br><br>

@@ -1,0 +1,33 @@
+
+<div class="section cards">
+  <div class="container">
+    <div class="columns is-multiline">
+      <div *ngFor="let item of clothes" class="card column toaster is-4 has-background-grey-dark">
+        
+        <div class="card-image">
+          <!-- <figure class="image"> -->
+            <img  [src]="item.image">
+          <!-- </figure> -->
+        </div>
+        <header class="card-header has-background-grey">
+              <p class="card-header-title " style="text-align: center;">
+                  {{item.name |uppercase}}
+              </p>
+          </header>
+        <div class="card-content">
+
+          <div class="content" style="font-family: Arial, Helvetica, sans-serif; color: white;">
+            {{item.description}}
+          </div>
+
+          <div>
+            
+            <a class="button is-medium is-black is-fullwidth ">Comprar</a> 
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

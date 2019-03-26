@@ -1,0 +1,37 @@
+#firstImage {
+  background-image: url(../../../assets/img/fondo2.png);
+  background-position: 50% 40px;
+  background-attachment: fixed;
+  background-size: 1180px 750px;
+}
+
+#secondImage{
+   background-image: url(../../../assets/img/fondo8.jpg); 
+   background-position:center; 
+   background-size: 1700px 780px; 
+   background-attachment: fixed;
+}
+
+#thirdImage{
+    background-image: url(../../../assets/img/fondoCorrecto.png); background-position:center; background-size: 1520px 620px; background-attachment: fixed;
+}
+
+#fourthImage{
+    background-image: url(../../../assets/img/fondo15.jpg); background-position:center; background-size: 1520px 750px; background-attachment: fixed;
+}
+
+#fifthImage{
+    background-image: url(../../../assets/img/fondoclasico.jpg); 
+    background-position:center; 
+    background-size: 1520px 750px; 
+    background-attachment: fixed;
+}
+
+#sixthImage{
+    background-image: url(../../../assets/img/fondo3.jpg); 
+    background-position:center; 
+    background-size: 1520px 720px; 
+    background-attachment: fixed;
+}
+
+

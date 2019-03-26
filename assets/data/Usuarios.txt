@@ -1,0 +1,7 @@
+{
+    "users": [
+        {"userName": "royer", "password":"royer", "passwordConfirm":"royer", "email":"royer_2498@hotmail.com", "character":"2d"},
+        {"userName": "pedro", "password":"pedro", "passwordConfirm":"pedro", "email":"pedrito@hotmail.com", "character":"Noodle"},
+        {"userName": "Juan", "password":"juan", "passwordConfirm":"juan", "email":"juan@gmail.com", "character":"Noodle"}
+    ]
+}

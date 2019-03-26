@@ -1,0 +1,79 @@
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-two-fifths">
+        <h3 class="title is-3" >Únete a nosotros</h3>
+
+        <div class="field">
+          <label class="label">Nombre de usuario</label>
+          <div class="control has-icons-left">
+            <input [(ngModel)]="user.userName" class="input" type="text" placeholder="Ej. Mariano24" />
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Contraseña</label>
+          <div class="control has-icons-left">
+            <input [(ngModel)]="user.password" class="input" type="password"/>
+            <span class="icon is-small is-left">
+              <i class="fas fa-lock"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Confirmar contraseña</label>
+            <div class="control has-icons-left">
+              <input [(ngModel)]="user.passwordConfirm" class="input" type="password" />
+              <span class="icon is-small is-left">
+                <i class="fas fa-lock"></i>
+              </span>
+            </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control has-icons-left">
+            <input [(ngModel)]="user.email" class="input is-danger" type="email" placeholder="Ej. Mariano@hotmail.com" />
+            <span class="icon is-small is-left">
+              <fa-icon icon="envelope"></fa-icon>
+            </span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Personaje</label>
+          <div class="control">
+            <div class="select" >
+              <select [(ngModel)]="user.character" (change)="changeTheCharacterIcon($event)">
+                <option>Murdoc</option>
+                <option>Noodle</option>
+                <option>2d</option>
+                <option>Russel</option>
+              </select>
+            </div>
+            <span>  </span>
+
+            <img *ngIf="selectedCharacter == ''" class="is-rounded" src = "../../../assets/img/Murdoc.jpg"  width="64px" height="64px"  style="border-radius: 50px; margin-top: 0px; margin-bottom: 5px; margin-left: 25px; border-style: solid;  border-width: 3px; border-color: #f25c65;"/>             
+            <img *ngIf="selectedCharacter == 'Murdoc'" class="is-rounded" src = "../../../assets/img/Murdoc.jpg"  width="64px" height="64px"  style="border-radius: 50px; margin-top: 0px; margin-bottom: 5px; margin-left: 25px; border-style: solid;  border-width: 3px; border-color: #f25c65;"/> 
+            <img *ngIf="selectedCharacter == 'Noodle'" class="is-rounded" src = "../../../assets/img/Noodle.jpg"  width="64px" height="64px"  style="border-radius: 50px; margin-top: 0px; margin-bottom: 5px; margin-left: 25px; border-style: solid;  border-width: 3px; border-color: #559fed;"/> 
+            <img *ngIf="selectedCharacter == '2d'" class="is-rounded" src = "../../../assets/img/2d.jpg"  width="64px" height="64px"  style="border-radius: 50px; margin-top: 0px; margin-bottom: 5px; margin-left: 25px; border-style: solid;  border-width: 3px; border-color: #f5e453;"/> 
+            <img *ngIf="selectedCharacter == 'Russel'" class="is-rounded" src = "../../../assets/img/Russel.jpg"  width="64px" height="64px"  style="border-radius: 50px; margin-top: 0px; margin-bottom: 5px; margin-left: 25px; border-style: solid;  border-width: 3px; border-color: #19b881;"/> 
+            
+          </div>
+        </div>
+
+        <div>
+            <a (click)="register()" *ngIf="selectedCharacter == ''" class="button is-medium is-danger is-fullwidth " style="background-color: #f25c65">REGISTRARSE</a>             
+            <a (click)="register()" *ngIf="selectedCharacter == 'Murdoc'" class="button is-medium is-danger is-fullwidth " style="background-color: #f25c65">REGISTRARSE</a> 
+            <a (click)="register()" *ngIf="selectedCharacter == 'Russel'" class="button is-medium is-success is-fullwidth " style="background-color: #19b881">REGISTRARSE</a> 
+            <a (click)="register()" *ngIf="selectedCharacter == 'Noodle'" class="button is-medium is-primary is-fullwidth " style="background-color: #559fed">REGISTRARSE</a> 
+            <a (click)="register()" *ngIf="selectedCharacter == '2d'" class="button is-medium is-warning is-fullwidth " style="background-color: #f5e453">REGISTRARSE</a> 
+        </div>      
+      </div>
+    </div>
+  </div>
+</section>

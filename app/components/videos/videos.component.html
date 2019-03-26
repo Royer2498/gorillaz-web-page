@@ -1,0 +1,139 @@
+<section class="hero is-fullheight video">
+  <div class="hero-video">
+      <video *ngIf="videoGorillaz == ''" id="bgvid" playsinline autoplay controls>
+        <source  src="../../../assets/videos/Gorillaz - Tranz.mp4" type="video/mp4">
+      </video>
+
+      <video *ngIf="videoGorillaz == 'Clint Eastwood'" id="bgvid" playsinline autoplay controls>
+        <source  src="../../../assets/videos/Gorillaz - Clint Eastwood.mp4" type="video/mp4">
+      </video>
+
+      <video *ngIf="videoGorillaz == 'Dare'" id="bgvid" playsinline autoplay controls>
+        <source  src="../../../assets/videos/Gorillaz - Dare.mp4" type="video/mp4">
+      </video>
+
+      <video *ngIf="videoGorillaz == 'Feel Good Inc.'" id="bgvid" playsinline autoplay controls>
+        <source  src="../../../assets/videos/Gorillaz - Feel Good Inc.mp4" type="video/mp4">
+      </video>
+
+      <video *ngIf="videoGorillaz == 'Dirty Harry'" id="bgvid" playsinline autoplay controls>
+        <source  src="../../../assets/videos/Gorillaz - Dirty Harry.mp4" type="video/mp4">
+      </video>
+
+      <video *ngIf="videoGorillaz == 'Humility'" id="bgvid" playsinline autoplay controls>
+        <source  src="../../../assets/videos/Gorillaz - Humility.mp4" type="video/mp4">
+      </video>
+
+      <video *ngIf="videoGorillaz == 'Melancholy Hill'" id="bgvid" playsinline autoplay controls>
+        <source  src="../../../assets/videos/Gorillaz - Melancholy hill.mp4" type="video/mp4">
+      </video>
+
+      <video *ngIf="videoGorillaz == 'Saturnz Barz'" id="bgvid" playsinline autoplay controls>
+        <source  src="../../../assets/videos/Gorillaz - Saturnz Barz.mp4" type="video/mp4">
+      </video>
+
+      <video *ngIf="videoGorillaz == 'Tranz'" id="bgvid" playsinline autoplay controls>
+        <source  src="../../../assets/videos/Gorillaz - Tranz.mp4" type="video/mp4">
+      </video>
+
+      <video *ngIf="videoGorillaz == '19-2000'" id="bgvid" playsinline autoplay controls>
+        <source  src="../../../assets/videos/Gorillaz-19200.mp4" type="video/mp4">
+      </video>
+
+      <video *ngIf="videoGorillaz == 'Stylo'" id="bgvid" playsinline autoplay controls>
+        <source  src="../../../assets/videos/Gorillaz - stylo.mp4" type="video/mp4">
+      </video>
+      
+  </div>  
+</section>
+
+<div class="columns is-mobile">
+
+      <div class="column is-1">
+      </div>
+      <div class="column is-1 has-text-centered">
+          <a role="button" (click)="changeVideo('Clint Eastwood')">
+              <img src="../../../assets/Miniatures/Clint-eastwood.jpg">
+              <p>Clint Eastwood</p>
+          </a>
+      </div>
+      <div class="column is-1 has-text-centered">
+
+          <a role="button" (click)="changeVideo('Dare')">
+              <img src="../../../assets/Miniatures/dare.jpg" >
+            <p>Dare</p>
+          </a>
+      </div>
+
+      <div class="column is-1 has-text-centered">
+
+          <a role="button" (click)="changeVideo('Feel Good Inc.')">
+              <img src="../../../assets/Miniatures/feelGoodInc.jpg" >
+              <p>Feel Good Inc.</p>
+          </a>
+      </div>
+
+      <div class="column is-1 has-text-centered">
+
+          <a role="button" (click)="changeVideo('Dirty Harry')">
+              <img src="../../../assets/Miniatures/dirty.jpg">
+            <p>Dirty Harry</p>
+          </a>
+      </div>
+
+
+      <div class="column is-1 has-text-centered">
+
+          <a role="button" (click)="changeVideo('Humility')">
+              <img src="../../../assets/Miniatures/humility.jpg" >
+              <p>Humility</p>
+          </a>
+      </div>
+
+
+      <div class="column is-1 has-text-centered">
+
+          <a role="button" (click)="changeVideo('Melancholy Hill')">
+              <img src="../../../assets/Miniatures/melancholy.jpg" >
+            <p>Melancholy Hill</p>
+          </a>
+      </div>
+
+
+      <div class="column is-1 has-text-centered">
+
+          <a role="button" (click)="changeVideo('Saturnz Barz')">
+              <img src="../../../assets/Miniatures/saturn.jpg" >
+              <p>Saturnz Barz</p>
+          </a>
+      </div>
+
+
+      <div class="column is-1 has-text-centered">
+
+          <a role="button" (click)="changeVideo('Tranz')">
+              <img src="../../../assets/Miniatures/tranz.jpg" >
+              <p>Tranz</p>
+          </a>
+      </div>
+
+      <div class="column is-1 has-text-centered">
+
+        <a role="button" (click)="changeVideo('19-2000')">
+            <img src="../../../assets/Miniatures/19-2000-1.jpg" >
+            <p>19-2000</p>
+        </a>
+    </div>
+
+    <div class="column is-1 has-text-centered">
+
+        <a role="button" (click)="changeVideo('Stylo')">
+            <img src="../../../assets/Miniatures/stylo.jpg" >
+            <p>Stylo</p>
+        </a>
+    </div>
+     
+
+    </div>
+    <br><br>
+

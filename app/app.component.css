@@ -1,0 +1,20 @@
+
+#parrafo{
+    font-family: fantasy;
+}
+
+#sidebar{
+    /* height: 900px; */
+    /* height: 100%; */
+    position: fixed;
+    
+}
+
+li:hover{
+    background-color: #e15c91;
+}
+
+a:hover{
+    background-color: #e15c91;
+}
+
